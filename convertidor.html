@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertidor de Unidades de Longitud</title>
+  <link rel="stylesheet" href="convertidor.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Convertidor de Unidades de Longitud</h1>
+    <label for="unidadInicial">Unidad Inicial:</label>
+    <select id="unidadInicial">
+      <option value="metros">Metros (m)</option>
+      <option value="kilometros">Kilómetros (km)</option>
+      <option value="centimetros">Centímetros (cm)</option>
+      <option value="milimetros">Milímetros (mm)</option>
+      <option value="pulgadas">Pulgadas (in)</option>
+      <option value="pies">Pies (ft)</option>
+      <option value="millas">Millas (mi)</option>
+      <option value="yardas">Yardas (yd)</option>
+    </select>
+    <label for="valorInicial">Valor Inicial:</label>
+    <input type="number" id="valorInicial" step="0.01" required>
+    <label for="unidadFinal">Unidad Final:</label>
+    <select id="unidadFinal">
+      <option value="metros">Metros (m)</option>
+      <option value="kilometros">Kilómetros (km)</option>
+      <option value="centimetros">Centímetros (cm)</option>
+      <option value="milimetros">Milímetros (mm)</option>
+      <option value="pulgadas">Pulgadas (in)</option>
+      <option value="pies">Pies (ft)</option>
+      <option value="millas">Millas (mi)</option>
+      <option value="yardas">Yardas (yd)</option>
+    </select>
+    <button id="convertirBtn">Convertir</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="convertidor.js"></script>
+</body>
+</html>

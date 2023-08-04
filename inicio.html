@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Áreas y Perímetros</title>
+  <link rel="stylesheet" href="style2.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Áreas y Perímetros</h1>
+    <label for="figura">Elige una figura:</label>
+    <select id="figura">
+      <option value="circulo">Círculo</option>
+      <option value="triangulo">Triángulo</option>
+      <option value="cuadrado">Cuadrado</option>
+      <option value="rectangulo">Rectángulo</option>
+      <option value="pentagono">Pentágono</option>
+      <option value="hexagono">Hexágono</option>
+    </select>
+    <div id="inputContainer">
+      <!-- Los campos de entrada se generan dinámicamente con JavaScript -->
+    </div>
+    <button id="calcularBtn">Calcular Área y Perímetro</button>
+    <div id="resultado"></div>
+    <div id="resultadoPerimetro"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
